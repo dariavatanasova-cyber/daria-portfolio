@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<title> Портфолио на Дария </title>
+		<style>
+			body{
+			background-color:#F2DFEB;
+			color:#592547;
+			margin:0px;
+			font: montserrat;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 300;
+			font-style: normal;
+			font-style: normal;
+			}
+			h1{
+			margin-top:-8px;
+			margin-left:-8px;
+			margin-right:-8px;
+			color:#592547;
+			background-color:#D9A7C7;
+			font-size:80px;
+			text-align:center;
+			font-family: "Great Vibes", cursive;
+			font-weight: 400;
+			font-style: normal;
+			}
+			<!--Навигационна част-->
+			nav{
+			text-align:center;
+			text-decoration:none;
+			margin:0px;
+			padding:0px;
+			}
+			ul{
+				font-size:40px;
+				color:#592547;
+				text-align:center;
+				list-style-type:none;
+				display:flex;
+				flex-direction:row;
+				gap:15px;
+				align-items:left;
+				margin:0px;
+				padding:0px;
+				font-weight:500;
+			}
+			ul li{
+			text-align:ceter;
+			}
+			a:link{
+			color:#592547;
+			text-decoration: none;
+			flex:1px;
+			}
+			a:active{
+			color:#592547;
+			text-decoration: none;
+			flex:1px;
+			}
+			a:visited{
+			color:#592547;
+			text-decoration: none;
+			flex:1px;
+			}
+			a:hover{
+			background-color: #D9A7C7;
+			color:#592547;
+			text-decoration: none;
+			flex:1px;
+			}
+			.dropdown {
+			position: relative;
+			}
+			.submenu {
+			font-size:25px;
+			color:#592547;
+			display: none;
+			list-style: none;
+			padding: 30px;
+			margin: 0;
+			}
+			li:hover .submenu {
+			  <!--background-color:#D9A7C7;-->
+			  color:#592547;
+			  display: block;
+			  z-index:1;
+			}
+			footer{
+			background-color:#D9A7C7;
+			padding:15px;
+			color:#592547;
+			text-align:center;
+			position:fixed;
+			bottom:0px;
+			right:0px;
+			width:100%;
+			}
+			img{
+			margin-top:-55px;
+			width:100%;
+			height:auto;
+			display:block;
+			}
+			.head{
+			font-size:98px;
+			font: montserrat;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 400;
+			font-style: normal;
+			text-align: center;
+			line-height: 100px;
+			margin-top:-300px;
+			padding-bottom:7px;
+			}
+			main{
+			margin-bottom:50px;
+			}
+			h2{
+			text-align:center;
+			font-family: "Great Vibes", cursive;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 80px;
+			}
+			h4{
+			display:block;
+			width:1300px;
+			padding-top:5px;
+			padding-bottom:10px;
+			margin:auto;
+			text-align:right;
+			font-size:40px;
+			font: montserrat;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 300;
+			font-style: normal;
+			text-decoration:overline;
+			}
+			.brand1{
+			width:950px;
+			height:auto;
+			padding:0px;
+			display:block;
+			align:left;
+			margin-top:auto;
+			margin-left:100px;
+			margin-right:auto;
+			margin-bottom:20px;
+			border: 3px, solid #592547;
+			}
+			.brand2{
+			width:950px;
+			height:auto;
+			padding:0px;
+			display:block;
+			align:right;
+			margin-top:auto;
+			margin-left:auto;
+			margin-right:100px;
+			margin-bottom:20px;
+			border: 3px, solid #592547;
+			}
+			.left{
+			text-align:left;
+			margin-left:150px;
+			font: montserrat;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 300;
+			font-style: normal;
+			font-size:60px;
+			text-decoration:overline;
+			}
+			.right{
+			text-align:right;
+			margin-right:150px;
+			font: montserrat;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 300;
+			font-style: normal;
+			font-size:60px;
+			text-decoration:overline;
+			}
+			.p1{
+			text-align:justify;
+			margin-right:75px;
+			margin-top:0px;
+			display:block;
+			float:right;
+			width:750px;
+			font: montserrat;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 200;
+			font-style: normal;
+			font-size:30px;
+			}
+			.p2{
+			text-align:justify;
+			margin-left:75px;
+			margin-top:0px;
+			display:block;
+			float:left;
+			width:750px;
+			font: montserrat;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 200;
+			font-style: normal;
+			font-size:30px;
+			}
+			.cover{
+			width:75%;
+			height:auto;
+			padding:0px;
+			display:block;
+			align:center;
+			margin-top:auto;
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:20px;
+			border: 3px, solid #592547;
+			}
+			h3{
+			text-align:right;
+			margin:0px;
+			width:87%;
+			font: montserrat;
+			font-family: "Montserrat", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 300;
+			font-style: normal;
+			font-size:60px;
+			text-decoration:overline;
+			}
+			<!--Край на навигационна част-->
+		
+		</style>
+	</head>
+	<body>
+			<!--Заглавна част-->
+			<header>
+				<h1> Моето портфолио </h1>
+			</header>
+			<img src="izobrazitelno_izkustvo.png">
+			<pre class="head">Изобразително
+изкуство</pre>
+			<!--Навигационна част-->
+			<nav>
+				<ul> 
+				<li class="dropdown">
+				<a href="#home"> Предмети </a>  
+					<ul class="submenu">
+						<li> <a href="komputyrna_animaciq.html"> Компютърна анимация </a> </li>
+						<li> <a href="multimediini_tehnologii.html"> Мултимедийни технологии </a> </li>
+						<li> <a href="komputyrna_grafika.html"> Компютърна графика </a> </li>
+						<li> <a href="animacionna_rezhisura.html"> Анимационна режисура </a> </li>
+						<li> <a href="fotografiq.html"> Фотография </a> </li>
+						<li> <a href="predpechatna_podgotovka.html"> Предпечатна подготовка </a> </li>
+						<li> <a href="kino.html"> Кино </a> </li>
+						<li> <a href="operatorstvo.html"> Операторство </a> </li>
+						<li> <a href="izobrazitelno_izkustvo.html"> Изобразително изкуство </a> </li>
+						</ul>
+					</li>
+					<li> <a href="index.html"> За мен </a> </li>
+					<li> <a href="kontakti.html"> Контакти </a> </li>
+				</ul>
+			</nav>
+			
+		
+			<!--Основно съдържание на страницата /content/-->
+			<main>
+			<h2>Brand</h2>
+			<h3 class="left">Brandboard</h3>
+			<p class="p1">Branboard-a е визуален документ, който събира на едно място основните елементи на идентичността на дадена марка. Той служи като бърз справочник за дизайнери, маркетолози и партньори, за да поддържат последователен външен вид и комуникация на бранда.</p>
+			<img class="brand1" src="brandboard.jpg">
+			<h3 class="right">Mockups</h3>
+			<p class="p2">Mockup на продукти с лого представлява реалистична визуална презентация на бранд идентичността, при която логото и другите графични елементи на марката се прилагат върху различни продукти и рекламни материали. Целта е да се демонстрира как брандът ще изглежда в реална среда и върху реални носители, преди те да бъдат произведени или използвани.</p>
+			<img class="brand2" src="mockups.jpg">
+			
+			<h2>Корица на книга</h2>
+			<img class="cover" src="gothikana.jpg">
+			<h3> Gothikana  by Runyx</h3>
+				</main>
+		
+			<!--Долна част на страницата/footer/-->
+			<footer>
+					Изработил: Диана Савова. Всички Права запазени ©, 2026 г. 
+								<!--За знака "запазена марка" натисни и задръж ALT 
+								    и въведи от цифровия блок на клавиатурата 0169-->
+			</footer>
+	</body>
+</html>
